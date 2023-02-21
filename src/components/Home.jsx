@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="container">
       <h3 style={{ textAlign: "center" }}>Top Colleges</h3>
+
       <div className="cards">
         <Card />
         <Card />
