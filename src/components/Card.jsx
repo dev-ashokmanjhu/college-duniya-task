@@ -5,39 +5,33 @@ import { HiOutlinePhotograph } from "react-icons/hi";
 import { MdHomeWork } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 
-const Card = () => {
+const Card = ({ college }) => {
   return (
     <div className="cardcontainer">
       <div className="first">
-        <img
-          className="CollegeImg"
-          src="https://images.shiksha.com/mediadata/images/1608298098php5uuM0z.jpeg"
-          alt="college"
-        />
+        <img className="CollegeImg" src={college.college_image} alt="college" />
         <div style={{ lineHeight: "1" }}>
-          <h2 className="collegeName">
-            National Institue of Technology -[NIT] Kurukshetra
-          </h2>
+          <h2 className="collegeName">{college.name}</h2>
           <p className="location">
-            <GoLocation /> Kurkshtetra,Haryana
+            <GoLocation /> {college.location}
           </p>
           <div className="logocontainer">
-            <IMG
-              src="https://upload.wikimedia.org/wikipedia/en/7/75/National_Institute_of_Technology%2C_Kurukshetra_Logo.png"
-              alt="logo"
-              className="collegeLogo"
-            />
+            <IMG src={college.logo_image} alt="logo" className="collegeLogo" />
           </div>
         </div>
         <div className="icons">
           <div className="media">
             <div className="gallary">
               <HiOutlinePhotograph />
-              <span style={{ fontWeight: "700", margin: "0 5px" }}>17</span>
+              <span style={{ fontWeight: "700", margin: "0 5px" }}>
+                {college.photos}
+              </span>
             </div>
             <div className="video">
               <RxVideo />
-              <span style={{ fontWeight: "700", margin: "0 5px" }}>5</span>
+              <span style={{ fontWeight: "700", margin: "0 5px" }}>
+                {college.videoes}
+              </span>
             </div>
           </div>
           <div className="rate">
@@ -45,7 +39,9 @@ const Card = () => {
             <div className="ratingTop">
               <span style={{ fontSize: "15px" }}>CollegeDunia Rating</span>
               <br />
-              <span style={{ fontSize: "20px" }}>7.5 /10</span>
+              <span style={{ fontSize: "20px" }}>
+                {college.collegedunia_rating} /10
+              </span>
             </div>
           </div>
         </div>
@@ -65,14 +61,16 @@ const Card = () => {
                 fontSize: "1rem",
               }}
             >
-              ₹ 50000
+              {college.fees}
             </span>
             <br />
             <span>BE/B.Tech First Year</span>
           </div>
           <hr className="hr-vertical" />
           <div className="userRating">
-            <span style={{ color: "#ff7900", fontSize: "1rem" }}>8.3/10</span>
+            <span style={{ color: "#ff7900", fontSize: "1rem" }}>
+              {college.user_rating}/10
+            </span>
             <br />
             <span>Users Ratings</span>
           </div>
@@ -81,12 +79,12 @@ const Card = () => {
         <div className="ranking">
           <div>
             <span>
-              Ranked 50 Out of 300 <br /> NIRF
+              Ranked {college.rank} Out of 300 <br /> IIT
             </span>
           </div>
           <div>
             <span>
-              Ranked 26 Out of 300 <br /> This Week
+              Ranked {college.weeklyrank} Out of 300 <br /> This Week
             </span>
           </div>
         </div>

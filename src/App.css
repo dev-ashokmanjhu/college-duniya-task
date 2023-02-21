@@ -35,6 +35,10 @@
   font-weight: 700;
   font-size: 0.5rem;
   line-height: 1;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .btns {
   display: flex;
@@ -68,8 +72,6 @@
   color: #ff7100;
 }
 .cardcontainer {
-  border: 1px solid white;
-  border-radius: 5px;
   background-color: #ffffff;
   color: #a7a7a7;
   display: flex;
@@ -81,6 +83,7 @@
   background: black;
   margin: 0;
   padding: 0;
+  height: 50%;
 }
 .collegeName {
   position: absolute;
@@ -92,7 +95,10 @@
   word-wrap: break-word;
 }
 .CollegeImg {
-  opacity: 0.7;
+  opacity: 0.6;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .location {
   position: absolute;
@@ -163,4 +169,54 @@ p {
 .gallary {
   display: flex;
   justify-content: center;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.sort_btn {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.input {
+  background-color: white;
+  color: black;
+  cursor: text;
+  margin: 10px;
+}
+.search_btn {
 }
