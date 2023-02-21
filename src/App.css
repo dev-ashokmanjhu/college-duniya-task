@@ -1,0 +1,81 @@
+.container {
+  background-color: rgb(7, 17, 26);
+  padding: 50px;
+  color: white;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+.collegeLogo {
+  width: 100%;
+}
+.CollegeImg {
+  opacity: 0.7;
+  background-color: black;
+  /* margin-bottom: 40px; */
+}
+.logocontainer {
+  width: 20%;
+  background-color: white;
+  position: absolute;
+  left: 5%;
+  bottom: -35px;
+}
+.ranking {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+}
+.Links {
+  display: flex;
+  justify-content: space-between;
+}
+.btns {
+  display: flex;
+}
+.btn {
+  width: 100%;
+  border-radius: 0;
+}
+.btn1 {
+  background-color: #ff7100;
+}
+.btn2 {
+  color: #ff7100;
+}
+.cardcontainer {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #a7a7a7;
+}
+.first {
+  position: relative;
+}
+.collegeName {
+  position: absolute;
+  font-size: 16px;
+  bottom: 0;
+  right: 0px;
+  left: 26%;
+  color: #fcfcfc;
+}
+.location {
+  position: absolute;
+  bottom: -40px;
+  left: 26%;
+}
+.second {
+  padding-top: 40px;
+}
+.fees {
+  margin-right: auto;
+}
+.hr-vertical {
+  margin: 10px;
+  color: gray;
+  border: 1px solid #676565;
+}
