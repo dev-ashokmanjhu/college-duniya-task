@@ -218,5 +218,11 @@ p {
   cursor: text;
   margin: 10px;
 }
-.search_btn {
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
 }

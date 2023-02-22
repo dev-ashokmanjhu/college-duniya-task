@@ -75,7 +75,7 @@ const Card = ({ college }) => {
             <span>Users Ratings</span>
           </div>
         </div>
-        <hr style={{ border: "1px solid rgb(219, 219, 219)" }} />
+        <hr style={{ border: "1px solid rgb(219, 219, 219)", width: "80%" }} />
         <div className="ranking">
           <div>
             <span>
